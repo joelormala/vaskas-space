@@ -26,7 +26,17 @@ print(distance_barrier.head())
 distance_barrier.plot(kind='scatter', x='barrier', y='distance')
 plt.show() 
 
-#clf = IsolationForest()
-#clf.fit(distance_barrier)
+clf = IsolationForest()
+clf.fit(distance_barrier)
 
+#from sklearn.inspection import DecisionBoundaryDisplay
 
+#disp = DecisionBoundaryDisplay.from_estimator(
+#    clf,
+#    distance_barrier,
+#    response_method="predict",
+#    alpha=0.5,
+#)
+#disp.ax_.scatter(distance_barrier)
+#plt.axis("square")
+#plt.show()
