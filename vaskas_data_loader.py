@@ -55,7 +55,7 @@ if __name__ == "__main__":
     quick_data_analysis(molecules_complex)
     print("Found {} molecules in optimized complex geometry".format(num_molecules_complex))
     print("Found {} molecules in optimized transition state geometry".format(num_molecules_TS))
-    print(data.head())
+    print(data.head(10))
 
 
 
