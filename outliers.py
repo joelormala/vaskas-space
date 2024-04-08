@@ -23,10 +23,10 @@ from sklearn.ensemble import IsolationForest
 
 distance_barrier = pd.read_csv("data/vaskas_features_properties_smiles_filenames.csv", usecols=[90, 91])
 print(distance_barrier.head())
-distance_barrier.plot(kind='scatter', x='distance', y='barrier')
-#plt.show() 
+distance_barrier.plot(kind='scatter', x='barrier', y='distance')
+plt.show() 
 
-clf = IsolationForest()
-clf.fit(distance_barrier)
+#clf = IsolationForest()
+#clf.fit(distance_barrier)
 
 
